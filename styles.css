@@ -1,0 +1,345 @@
+body {
+  background-color: #FAEBD7;
+  /*background-image: url('https://newevolutiondesigns.com/images/freebies/nature-hd-background-2.jpg');*/
+  /*background-image: url("https://image.shutterstock.com/image-photo/background-cooking-on-black-wooden-260nw-1446911300.jpg");*/
+  background-repeat: no-repeat;
+  margin-top: 0;
+  margin-left: 1px;
+  height: 100%;
+  width: 100%;
+  font-family: 'EB Garamond', serif;
+  min-width: 720px;
+  overflow-x: hidden;
+}
+
+.aboutme {
+  display: grid;
+  background-color: #fdf6ee;
+  column-gap: 15px;
+  margin-top: 15px;
+  width: 100%;
+  grid-template-rows: 40px 200px 200px;
+  grid-template-columns: 700px 360px ;
+  grid-template-areas:
+            "title picture"
+            "info  picture"
+            "info  credit";
+  justify-content: center;
+  padding: 15px 15px;
+  overflow-x: hidden;
+}
+
+.aboutme p {
+  font-size: 20px;
+  grid-area: info;
+  padding-right: 17px;
+}
+
+.aboutme img {
+  grid-area: 1 / 2 / 4 / 3 ;
+  height: 100%;
+}
+
+#credit {
+  grid-area: credit ;
+  align-self: flex-end;
+  color: white;
+  font-size: 11px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  opacity: .6;
+}
+
+.navbar {
+  background-color: white;
+  color: tomato;
+  /*background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS71jXJtJgpK7ohVmRJhfnhOufrvo5VsgKLQ&usqp=CAU");
+  background-repeat: no-repeat;
+  background-position: center;*/
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0;
+  padding: 0 0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  font-family: Arial;
+  height: 40px
+}
+
+ a {
+  color: tomato;
+}
+
+.contactinfo {
+  background-color: #ecf5ee;
+  display: grid;
+  width: 100%;
+  grid-template-rows: repeat(3,50px);
+  grid-template-columns: 1060px;
+  justify-content: center;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.pic {
+  grid-area: phone;
+  height: 30px;
+  width: 30px;
+}
+.phone {
+  grid-area: 2 / 1 / 3 / 2;
+  padding-left: 0;
+}
+.email {
+  grid-area: 3 / 1 / 4 / 2;
+  padding-left: 0;
+}
+
+ description {
+  color: #000000;
+  position: relative;
+  font-size: 20px;
+  bottom: 9px;
+  padding: 5px;
+}
+
+description a{
+  color: black;
+}
+
+.social_media {
+  bottom: 6px;
+}
+
+.social_icon {
+  height: 25px;
+  width: 30px;
+}
+
+.container {
+  font-family: monospace;
+  text-align: center;
+  background-image: url("https://aafoodservice.com/wp-content/uploads/2019/05/slider-v1704.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  grid-area: head;
+  height: 86%;
+  justify-self: center;
+  margin-top: 30px;
+  position: relative;
+  line-height: 325px;
+  width: 80%;
+  opacity: .8;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3,290px);
+  grid-template-rows: repeat(3, 350px);
+  gap: 10px 10px;
+  justify-content: center;
+  margin-left: 5px;
+  grid-template-areas:
+            "head head head"
+            "recipe_A recipe_B recipe_C"
+            "recipe_D recipe_E recipe_J";
+}
+
+div {
+  background-color: white;
+}
+
+.food {
+  position: relative;
+  width: 100%;
+  height: 158px;
+}
+
+.clock {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.time { /*to move text in acenter you need to set the position to relative so
+          that bottom will offset it*/
+  display: inline-block;
+  font-size: 15px;
+  margin-left: 2px;
+  display: inline;
+  position: relative;
+  bottom: 3px;
+  font-size: 17px;
+}
+
+hr {
+  padding: 0;
+  width 100%;
+}
+
+h2 {
+  background-color: white;
+  color: #ffa500;
+  margin: 0 0;
+  padding-left: 3px;
+}
+
+h3 {
+  /*flex-wrap: pre-wrap;*/
+  font-family: 'EB Garamond', serif;
+  font-size: 30px;
+  grid-area: title;
+  margin-top: 0px;
+  padding-top: 3px;
+  /*left: 30%;
+  position: relative;*/
+}
+
+h4 {
+  padding-left: 5px;
+  padding-top: 7px;
+  text-align: center;
+  margin: 5px auto;
+  opacity: 20%;
+  width: 100%;
+}
+h5 {
+  font-size: 15px;
+  margin-top: 2px;
+  margin-bottom: 3px;
+  padding-left: 3px;
+}
+h6 {
+  grid-area: 1 / 1 / 2 / 2;
+  font-size: 30px;
+  margin: 0px 0px;
+}
+/*
+h4 , ul {
+  color: white;
+  transition: 20s ease-out -5s;
+}
+*/
+h4:hover,ul:hover {
+  color: black;
+  opacity: 100%;
+}
+
+ description:hover {
+  font-size: 22px;
+  font-weight: 550;
+  position: relative;
+  top: -10px;
+  bottom: -3px;
+}
+
+.social_media:hover {
+  top: -4px;
+  color: #663399;
+}
+
+.social_media a:hover{
+  color: #663399;
+}
+
+ul {
+  margin-top: 0;
+  padding-left: 20px;
+}
+
+p {
+  padding-left: 5px;
+  margin-bottom: 0px;
+}
+
+.nav {
+  align-items: center;
+  display: flex;
+  float: left;
+  height: 100%;
+  justify-content: center;
+  margin: 0 0;
+  width: 8%;
+}
+.recipe_A {
+  background-color: white;
+  grid-area: recipe_A;
+}
+.recipe_B {
+  grid-area: recipe_B;
+}
+.recipe_C {
+  grid-area: recipe_C;
+}
+.recipe_D {
+  grid-area: recipe_D;
+}
+.recipe_E {
+  grid-area: recipe_E;
+}
+.recipe_J {
+  grid-area: recipe_J;
+}
+
+
+main div {
+  overflow: hidden;
+  position: relative;
+  transition: ease-in 4s;
+}
+
+main div:hover {
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,.1);
+  z-index: 1;
+  height: 500px;
+  top: -150px;
+  transition-delay: 20s;
+  color: black;
+  overflow-y: scroll;
+  margin-bottom: 150px;
+}
+.recipe_E:hover {
+  overflow-y: scroll;
+}
+
+a {
+  text-decoration: none;
+}
+
+ .name a {
+   color: #ffa500;
+   text-decoration: none;
+ }
+
+.name a:hover {
+  color: #8EBEA4;
+}
+
+.nav:hover {
+  background-color: #F08080;
+  color: white;
+}
+/*
+.nav a:hover{
+  color:white;
+}
+*/
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track shows the space your not in*/
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle you pull this and shows the part your in*/
+::-webkit-scrollbar-thumb {
+  background: lightgray;
+}
+
+/* Handle on hover  the bar that you pull and shows the part your in*/
+::-webkit-scrollbar-thumb:hover {
+  background: gray;
+}
